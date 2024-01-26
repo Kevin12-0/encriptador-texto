@@ -1,0 +1,61 @@
+body {
+    background: black;
+    margin: 1em 1em 1em 1em;
+    font-family: "Kanit", sans-serif;
+}
+
+.title-is-one {
+    text-align: center;
+    font-size: 80px;
+    color: #186A3B;
+}
+
+div p {
+    text-align: center;
+    margin: 5px;
+    font-size: 40px;
+    color: #186A3B;
+}
+
+form label {
+    font-weight: bolder;
+    margin: 20px 0 10px 10px;
+    font-size: 40px;
+    color: #186A3B;
+
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    width: 90%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    border: 1px solid #186A3B;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: medium;
+}
+
+.result {
+    position: absolute;
+    text-align: left;
+    color: #186A3B;
+    font-size: large;
+    margin: 1em;
+}
+
+.button {
+    margin: 10px 10px;
+    background-color: black;
+    color: #186A3B;
+    font-size: medium;
+    border: none;
+}
+
+.button:hover{
+    transform:scale(1.20);
+}
