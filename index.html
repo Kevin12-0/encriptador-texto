@@ -24,15 +24,14 @@
             <p>La privacidad de tus textos nos importa</p>
         </div>
     </main>
-    <form>
-        <label>Inserta tu texto</label>
-        <div>
-            <textarea id="textoUsuario"></textarea>
-        </div>
-        <button class="button">Encriptar</button>
-        <button class="button">Desencriptar</button>
-        <p class="result">Aqui se mostrara tu resultado para siempre y por siemprey por los siglos de los siglos </p>
-    </form>
-</body>
+    <label for="textoUsuario">Inserta tu texto</label>
+    <div>
+        <textarea id="textoUsuario"></textarea>
+    </div>
+    <input type="submit" class="button" value="Enviar" onclick="cifrar()">
 
+    <p class="result" id="resultado">Aqui se mostrara tu resultado para siempre y por siemprey por los siglos de los siglos </p>
+
+</body>
+<script src="js/app.js"></script>
 </html>
