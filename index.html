@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
 </head>
 
 <body>
-    <header>
-        <h1 class="title-is-one">Encriptador de Texto</h1>
-    </header>
-    <main>
-        <div>
-            <p>La privacidad de tus textos nos importa</p>
+    <section class="section">
+        <h1 class="title is-1">Encriptador de texto</h1>
+        <h2 class="subtitle">Tu privacidad nos importa</h2>
+        <div class="columns">
+            <div class="column">
+                <label class="label">Inserta tu texto</label>
+                <form>
+                    <textarea class="textarea is-primary" placeholder="Inserta tu texto aqui"
+                        id="textoUsuario"></textarea>
+                </form>
+            </div>
+            <div class="column">
+                <label class="label">Resultado</label>
+                <p id="resultado"></p>
+            </div>
         </div>
-    </main>
-    <label for="textoUsuario">Inserta tu texto</label>
-    <div>
-        <textarea id="textoUsuario"></textarea>
-    </div>
-    <input type="submit" class="button" value="Enviar" onclick="cifrar()">
-    <button class="button" onclick="desifrar()">Desifrar</button>
-    <p class="result" id="resultado">El resultado se mostrara aqui</p>
-
+    </section>
+    <section class="section">
+        <button class="button is-success" onclick="cifrar()">Encriptar</button>
+        <button class="button is-warning" onclick="desifrar()">Desencriptar</button>
+    </section>
 </body>
 <script src="js/app.js"></script>
+
 </html>
